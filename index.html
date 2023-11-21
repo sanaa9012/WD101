@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Registration Page</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300&family=Silkscreen&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+  <div class="container">
+    <h2>Register here</h2>
+    <form id="user-form">
+      <div class="form-field">
+        <label for="name">Name<br></label>
+        <input type="text" class="input" name="name" id="name" placeholder="Enter your Name" required>
+      </div>
+      <div class="form-field">
+        <label for="email">Email<br></label>
+        <input type="email" class="input" name="email" id="email" placeholder="Enter your Email" required>
+      </div>
+      <div class="form-field">
+        <label for="password">Password<br></label>
+        <input type="password" class="input" name="password" id="password" placeholder="Enter your Password" required>
+      </div>
+      <div class="form-field">
+        <label for="dob">Date of Birth<br></label>
+        <input type="date" class="input" name="dob" id="dob" placeholder="Date of Birth" required>
+      </div>
+      <div class="form-field">
+        <input type="checkbox" name="terms" id="terms">
+        <label for="terms">Accept terms and conditions ?</label>
+      </div>
+      <div class="form-field">
+        <button class="button" type="submit" id="submit" name="submit">
+          Submit
+        </button>
+      </div>
+    </form>
+  </div>
+  <div class="entries">
+    <h2>Entries</h2>
+    <div id="user-entries">
+      <table id="table">
+
+      </table>
+    </div>
+  </div>
+</body>
+<script src="index.js"></script>
+</html>
